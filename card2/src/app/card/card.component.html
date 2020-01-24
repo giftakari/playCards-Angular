@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="card-image">
+    <figure class="image is-4by3">
+      <img [src]="imageUrl" alt="imageUrl" />
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media-content">
+      <p class="title is-4">{{ title }}</p>
+      <p class="subtitle is-6">@{{ username }}</p>
+      <div class="content">{{ content }}</div>
+      <h2>
+        <button class="like-button liked">
+          <span class="likes-counter like"> Like |{{ initialCount }}</span>
+        </button>
+      </h2>
+    </div>
+  </div>
+</div>
