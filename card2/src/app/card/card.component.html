@@ -10,8 +10,8 @@
       <p class="subtitle is-6">@{{ username }}</p>
       <div class="content">{{ content }}</div>
       <h2>
-        <button class="like-button liked">
-          <span class="likes-counter like"> Like |{{ initialCount }}</span>
+        <button class="like-button liked" (click)="addLikes()">
+          <span class="likes-counter like"> Like |{{  initialCount }}</span>
         </button>
       </h2>
     </div>

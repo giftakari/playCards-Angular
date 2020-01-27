@@ -11,9 +11,12 @@ export class CardComponent implements OnInit {
   @Input() imageUrl = "";
   @Input() username = "";
   @Input() content = "";
-  @Input() initialCount="";
+  @Input() initialCount = 0;
 
   constructor() {}
 
   ngOnInit() {}
+  addLikes() {
+    this.initialCount += 1;
+  }
 }
